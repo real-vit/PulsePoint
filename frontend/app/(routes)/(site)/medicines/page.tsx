@@ -7,6 +7,7 @@ import DoingToday from "./try";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
 import { Boxes } from "lucide-react";
+import { Cond } from "./browsebyconditions";
 
 
 export default function Home () {
@@ -31,10 +32,10 @@ export default function Home () {
             <br />
             <div className="mx-auto items-center">
                 <h3 className="font-semibold px-5">Browse by Health Condition...</h3>
-                 <Scroll/>
+                <Cond/>
             </div>
             <br />
-
+            
         </div>
     )
 }

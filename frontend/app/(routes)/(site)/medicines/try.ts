@@ -1,29 +1,35 @@
-const DoingToday=[
+const Conditions=[
     {
         link: "/",
-        desc: "Buy Medicines",
+        text: "Diabetes Care",
         img: "/images/pill.jpg"
     },
     {
         link: "/",
-        desc: "Buy Medicines",
+        text: "Cardiac",
         img: "/images/pill.jpg"
     },
     {
         link: "/",
-        desc: "Buy Medicines",
+        text: "Cancer",
         img: "/images/pill.jpg"
     },
     {
         link: "/",
-        desc: "Buy Medicines",
+        text: "Stomach Care",
         img: "/images/pill.jpg"
     },
     {
         link: "/",
-        desc: "Buy Medicines",
+        text: "Elderly Care",
         img: "/images/pill.jpg"
-    }
+    },
+    {
+        link: "/",
+        text: "Respiratory",
+        img: "/images/pill.jpg"
+    },
+
 ]
 
-export default DoingToday
+export default Conditions

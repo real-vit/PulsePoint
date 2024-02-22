@@ -1,9 +1,9 @@
 const HubLinkData=[
-    {link: "/", dest: "Home"},
-    {link: "/", dest: "Medicines"},
-    {link: "/", dest: "My Doctor"},
-    {link: "/", dest: "My Reports"},
-    {link: "/", dest: "My Health"}
+    {link: "/hom", dest: "Home"},
+    {link: "/medicines", dest: "Medicines"},
+    {link: "/doctor", dest: "My Doctor"},
+    {link: "/labt", dest: "My Reports"},
+    {link: "/health", dest: "My Health"}
 ]
 
 export default HubLinkData
