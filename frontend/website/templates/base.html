@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <!-- DISPLAYING FLASH MESSAGES -->
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for i in messages %} {{ i }} {% endfor %} {% endif %} {%
+    endwith %}
+
+    <!-- END OF FLASH MESSAGES -->
+
+    <nav>
+      {% if user.is_authenticated %} {% if current_user.user_type=="patient" %}
+      <a href="/patient-dashboard">Patient Dashboard</a>
+      {% else %}
+      <a href="/doctor-dashboard">Doctor Dashboard</a>
+      {% endif %}
+      <a href="/logout">Logout</a> {% endif %}
+    </nav>
+
+    {% block content %}{% endblock %}
+  </body>
+</html>

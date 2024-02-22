@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block title %}Patient Dashboard{% endblock %} {%
+block content %}
+<h3>Patient Dashboard</h3>
+
+<h2>Health Data Updates</h2>
+<form action="/submit" method="POST">
+  <label for="pulse_rate">Pulse Rate:</label>
+  <input type="number" id="pulse_rate" name="pulse_rate" required /><br />
+
+  <label for="sys_pressure">Systolic Pressure:</label>
+  <input type="number" id="sys_pressure" name="sys_pressure" required /><br />
+
+  <label for="dia_pressure">Diastolic Pressure:</label>
+  <input type="number" id="dia_pressure" name="dia_pressure" required /><br />
+
+  <label for="blood_sugar">Blood Sugar:</label>
+  <input type="number" id="blood_sugar" name="blood_sugar" required /><br />
+
+  <label for="step_count">Step Count:</label>
+  <input type="number" id="step_count" name="step_count" required /><br />
+
+  <label for="sleep_duration">Sleep Duration:</label>
+  <input
+    type="number"
+    id="sleep_duration"
+    name="sleep_duration"
+    required
+  /><br />
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
