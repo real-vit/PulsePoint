@@ -1,6 +1,8 @@
 import { Hub } from "@/components/hubnav/hub";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import { Condi } from "./components/specialities/speciality";
+import { DocShow } from "./components/doclist/doc";
 
 export default function Home () {
     return(
@@ -15,6 +17,9 @@ export default function Home () {
             <div className="py-3">
                 <p>Choose from the best doctors across the city...</p>
             </div>
+            <Condi/>
+            <DocShow/>
+            
         </div>
     )
 }

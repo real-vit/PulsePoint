@@ -16,32 +16,32 @@ export const Sidebar = () => {
   const routes = [
     {
       icon: Home,
-      href: '/',
+      href: '/hom',
       label: "Home",
       pro: false,
     },
     {
       icon: Pill,
-      href: '/',
+      href: '/medicines',
       label: "Medicines",
       pro: true,
     },
     {
       icon: Stethoscope,
-      href: '/',
+      href: '/doctor',
       label: "My Doctor",
       pro: false,
     },
 
     {
       icon: FolderCheck,
-      href: '/',
+      href: '/labt',
       label: "My Reports",
       pro: false,
     },
     {
       icon: ClipboardPlus ,
-      href: '/',
+      href: '/health',
       label:"My Health",
       pro: false,
     },
