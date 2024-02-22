@@ -187,7 +187,10 @@ async def vitalsFetch(user_id: int):
                     "DiaPressure": row[3],
                     "BloodSugar": row[4],
                     "VitalID": row[5],
-                    "RecordDate": row[6].strftime("%Y-%m-%d"),
+                    "StepCount": row[6],
+                    "SleepDuration": row[7],
+                    "Symptoms": row[8],
+                    "RecordDate": row[9].strftime("%Y-%m-%d"),
                 }
                 vitals_list.append(vitals_dict)
 
