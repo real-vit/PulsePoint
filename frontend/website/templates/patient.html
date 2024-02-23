@@ -27,8 +27,44 @@ block content %}
     required
   /><br />
 
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" name = "submit_button" value = "Vitals">Submit</button>
 </form>
 <br />
+
+<form action="/patient-dashboard" method="POST">
+  <button type="submit" class="btn btn-primary" name = "submit_button" value = "Diet">Diet</button>
+  <button type="submit" class="btn btn-primary" name = "submit_button" value = "Exercise">Exercise</button>
+  <button type="submit" class="btn btn-primary" name = "submit_button" value = "EODReport">Daily Report</button>
+</form>
+<br>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Pulse Rate</th>
+    <th>Systolic Pressure</th>
+    <th>Diastolic Pressure</th>
+    <th>Blood Sugar</th>
+    <th>Step Count</th>
+    <th>Sleep Duration</th>
+  </tr>
+  {% if vitals %}
+    {% for vital in vitals %}
+      <tr>
+        <td>{{ vital.date }}</td>
+        <td>{{ vital.pulserate }}</td>
+        <td>{{ vital.syspressure }}</td>
+        <td>{{ vital.diapressure }}</td>
+        <td>{{ vital.bloodsugar }}</td>
+        <td>{{ vital.stepcount }}</td>
+        <td>{{ vital.sleep_duration }}</td>
+      </tr>
+    {% endfor %}
+  {% else %}
+    <tr>
+      <td colspan="7">No vitals data available.</td>
+    </tr>
+  {% endif %}
+</table>
 
 {% endblock %}
