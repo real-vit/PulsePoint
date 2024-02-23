@@ -1,11 +1,12 @@
 import mysql.connector
 
 db_config = {
-    'user': 'root',
-    'password': 'root',
-    'host': 'localhost',
-    'database': 'bolt_db'
+    "user": "root",
+    "password": "root",
+    "host": "localhost",
+    "database": "bolt_db",
 }
+
 
 def connect_to_database():
     try:
@@ -14,5 +15,3 @@ def connect_to_database():
     except mysql.connector.Error as e:
         print("Error connecting to MySQL database:", e)
         return None
-    
-    

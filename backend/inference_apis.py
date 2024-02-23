@@ -125,6 +125,7 @@ async def exercisePlan(json_data: dict):
 
     return {"message": convo.last.text}
 
+
 @inference_router.post("/EODReport/")
 async def EODReport(json_data: dict):
 

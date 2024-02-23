@@ -113,7 +113,7 @@ async def vitalsUpload(json_data: dict):
         else:
             raise HTTPException(status_code=500, detail="Unable to connect to database")
     except Exception:
-        return {"Message": "Vitals can be posted only once per day."}
+        return {"Error": "Vitals can be posted only once per day."}
 
 
 # 2. Vitals Update (PUT)
@@ -181,16 +181,15 @@ async def vitalsFetch(user_id: int):
             vitals_list = []
             for row in rows:
                 vitals_dict = {
-                    "UserID": row[0],
-                    "PulseRate": row[1],
-                    "SysPressure": row[2],
-                    "DiaPressure": row[3],
-                    "BloodSugar": row[4],
-                    "VitalID": row[5],
-                    "StepCount": row[6],
-                    "SleepDuration": row[7],
-                    "Symptoms": row[8],
-                    "RecordDate": row[9].strftime("%Y-%m-%d"),
+                    "user_id": row[0],
+                    "vital_id": row[1],
+                    "pulserate": row[2],
+                    "syspressure": row[3],
+                    "diapressure": row[4],
+                    "bloodsugar": row[5],
+                    "stepcount": row[6],
+                    "sleep_duration": row[7],
+                    "date": row[8].strftime("%Y-%m-%d"),
                 }
                 vitals_list.append(vitals_dict)
 
