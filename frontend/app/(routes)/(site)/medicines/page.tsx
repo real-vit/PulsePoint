@@ -26,15 +26,19 @@ export default function Home () {
             <div className="mx-auto items-center">
                 <h3 className="font-semibold px-5">Buy Again from your previous order</h3>
                  {/* Add link with backend */}
-                 <Button variant={"outline"}>Go to My Orders.... <Boxes/></Button>
+                 <br />
+                 <div className="h-32 bg-green-400 opacity-30 border border-black md:w-80 rounded-md text-center px-5 mx-auto">
+                    Order to see your previous orders here...
+                 </div>
+                 <br/>
+                 <Button variant={"outline"} className="px-4"><h2 className="px-5">Go to My Orders</h2><Boxes/></Button>
             </div>
 
             <br />
             <div className="mx-auto items-center">
-                <h3 className="font-semibold px-5">Browse by Health Condition...</h3>
+                <h3 className="font-semibold px-5">Browse by Health Condition</h3>
                 <Cond/>
             </div>
-            <br />
             
         </div>
     )

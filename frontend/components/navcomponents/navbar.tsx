@@ -15,7 +15,7 @@ export const Navbar=()=>{
             <div className="flex items-center">
             <Link href="/">
                 <h1 className={
-                    "hidden md:block text-xl md:text-3xl font-bold text-primary"}>
+                    "md:block text-xl md:text-3xl font-bold text-primary text-center md:text-justify"}>
                     PulsePoint
                 </h1>
             </Link>
@@ -28,7 +28,6 @@ export const Navbar=()=>{
             </div>
             <Link className={buttonVariants({ variant: "outline" })} href="/medicines">Login/Signup</Link>
             </div>
-            <MobileSidebar/>
 
             
         </div>

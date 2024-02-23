@@ -8,7 +8,7 @@ export const DoctorData = ({
     }
 )=>{
     return(
-        <div className="absolute items-start w-full h-32 border-3 border-black px-7 py-7 grid grid-cols-4">
+        <div className="relative items-start w-full h-52 border border-black px-7 py-7 grid grid-cols-4">
             <div className="absolute self-start">
                  <Image
                 src={img}

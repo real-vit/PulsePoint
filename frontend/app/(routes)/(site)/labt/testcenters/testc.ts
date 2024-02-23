@@ -1,18 +1,18 @@
 const TestCenters =[
     {
-        name: "Ayush Kumar",
+        name: "Sashank Labs",
         img: "/images/pill.jpg",
-        loc: "cardiologist"
+        loc: "KPHB"
     },
     {
         name: "Ayush Kumar",
         img: "/images/pill.jpg",
-        loc: "cardiologist"
+        loc: "Hyderabad"
     },
     {
         name: "Ayush Kumar",
         img: "/images/pill.jpg",
-        loc: "cardiologist"
+        loc: "Hmm"
     },
     {
         name: "Ayush Kumar",

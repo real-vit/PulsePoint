@@ -13,9 +13,9 @@ import Link from "next/link";
  )=>{
     return(
         <div className="z-20 border-black-5">
-            <div className="flex  w-32 h-32 rounded-full py-8 px-2 text-center">
+            <div className="flex w-32 h-32 rounded-full hover:opacity-85 text-center">
             <Link href={link} target="_blank">
-                <Image 
+                <Image  className="align-self-center"
                 src= {img}
                 width={200}
                 height={200}
@@ -24,7 +24,7 @@ import Link from "next/link";
                 </Link>
           </div>
           <br/>
-          <p className="self-between">{text}</p>
+          <p className="self-between text-center font-bold">{text}</p>
         </div>
          
      )

@@ -12,27 +12,27 @@ export interface Artwork {
 
 export const works: Artwork[] = [
   {
-    artist: "Ornella Binni",
+    artist: "Buy Medicines",
     art: "/images/pill.jpg",
     link: "/",
   },
   {
-    artist: "Tom Byrom",
+    artist: "Book Lab Tests",
     art: "/images/pill.jpg",
     link: "/",
   },
   {
-    artist: "Vladimir Malyavko",
+    artist: "Upload Prescription",
     art: "/images/pill.jpg",
     link: "/",
   },
   {
-    artist: "Vladimir Malyavko",
+    artist: "Consult Online",
     art: "/images/pill.jpg",
     link: "/",
   },
   {
-    artist: "Vladimir Malyavko",
+    artist: "Analyse Diet Plan",
     art: "/images/pill.jpg",
     link: "/",
   }
@@ -40,7 +40,7 @@ export const works: Artwork[] = [
 
 export function Scroll() {
   return (
-    <ScrollArea className="w-full h-100 whitespace-nowrap rounded-md border">
+    <ScrollArea className="w-full md:w-full align-items-center h-100 whitespace-nowrap rounded-md border">
       <div className="flex w-max space-x-4 p-4">
         {works.map((artwork) => (
           <figure key={artwork.artist} className="shrink-0">

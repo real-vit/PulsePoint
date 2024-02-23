@@ -10,7 +10,7 @@ export const HubLink =({
     dest:string;
 })=>{
     return(
-        <div className="font-bold">
+        <div className="font-bold hover:font-2xl hover:text-white">
             <Link
             href={link}>
                 {dest}

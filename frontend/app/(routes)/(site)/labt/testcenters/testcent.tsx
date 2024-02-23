@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 
 export const TestCenterData = ({
@@ -8,7 +9,7 @@ export const TestCenterData = ({
     }
 )=>{
     return(
-        <div className="absolute items-start w-full h-32 border-3 border-black px-7 py-7 grid grid-cols-4">
+        <div className="relative items-start w-full h-52 border border-black px-7 py-7 grid grid-cols-4">
             <div className="absolute self-start">
                  <Image
                 src={img}
@@ -19,7 +20,8 @@ export const TestCenterData = ({
             </div>
             <div className="font-bold  col-start-3 md:col-start-2 md:col-end-4">
                 <h2 className="md:text-3xl text-xl">{name}</h2>
-                <p className="text-md">{loc}</p>
+                <Badge variant="outline">{loc}</Badge>
+
             </div>
             <br/>
             <br />
