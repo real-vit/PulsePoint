@@ -3,7 +3,7 @@ block content %}
 <h3>Patient Dashboard</h3>
 
 <h2>Health Data Updates</h2>
-<form action="/submit" method="POST">
+<form action="/patient-dashboard" method="POST">
   <label for="pulse_rate">Pulse Rate:</label>
   <input type="number" id="pulse_rate" name="pulse_rate" required /><br />
 
@@ -29,4 +29,6 @@ block content %}
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<br />
+
 {% endblock %}

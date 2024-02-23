@@ -5,7 +5,7 @@ from inference_apis import inference_router
 
 app = FastAPI()
 
-origins = ["http://localhost:3000"]
+origins = ["http://localhost"]
 
 app.add_middleware(
     CORSMiddleware,
